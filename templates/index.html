@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Flight Travels</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo" data-i18n="brand">First Flight</div>
+        <nav>
+            <a href="#hero" data-i18n="nav.home">Home</a>
+            <a href="#destinations" data-i18n="nav.destinations">Destinations</a>
+            <a href="#packages" data-i18n="nav.packages">Packages</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="actions">
+            <select id="language-switcher" aria-label="Language switcher">
+                <option value="en">EN</option>
+                <option value="ar">AR</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1 data-i18n="hero.title">Discover your next adventure</h1>
+                <p data-i18n="hero.subtitle">Curated trips, unforgettable experiences, and seamless bookings.</p>
+                <div class="hero-actions">
+                    <a class="btn primary" href="#packages" data-i18n="hero.cta">View Packages</a>
+                    <a class="btn ghost" href="#contact" data-i18n="hero.secondary">Talk to us</a>
+                </div>
+            </div>
+            <div class="hero-visual" aria-hidden="true">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Airplane wing above clouds" />
+            </div>
+        </section>
+
+        <section id="destinations" class="section">
+            <div class="section-header">
+                <h2 data-i18n="destinations.title">Top Destinations</h2>
+                <p data-i18n="destinations.subtitle">Hand-picked places loved by our travelers.</p>
+            </div>
+            <div class="cards">
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=800&q=80" alt="Paris" />
+                    <div class="card-body">
+                        <h3 data-i18n="destinations.cards.paris.title">Paris, France</h3>
+                        <p data-i18n="destinations.cards.paris.body">Romantic getaways, art, and culinary delights.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1505764706515-aa95265c5abc?auto=format&fit=crop&w=800&q=80" alt="Bali" />
+                    <div class="card-body">
+                        <h3 data-i18n="destinations.cards.bali.title">Bali, Indonesia</h3>
+                        <p data-i18n="destinations.cards.bali.body">Pristine beaches, tropical forests, and wellness retreats.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=800&q=80" alt="Cappadocia" />
+                    <div class="card-body">
+                        <h3 data-i18n="destinations.cards.cappadocia.title">Cappadocia, Türkiye</h3>
+                        <p data-i18n="destinations.cards.cappadocia.body">Hot air balloons and surreal landscapes.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="packages" class="section muted">
+            <div class="section-header">
+                <h2 data-i18n="packages.title">Featured Packages</h2>
+                <p data-i18n="packages.subtitle">Ready-to-go itineraries designed by experts.</p>
+            </div>
+            <div class="cards">
+                <article class="card shadow">
+                    <div class="card-body">
+                        <h3 data-i18n="packages.cards.cities.title">Classic Cities</h3>
+                        <p data-i18n="packages.cards.cities.body">7 days across Paris, Rome, and Barcelona with guided tours.</p>
+                        <div class="card-footer">
+                            <span class="price" data-i18n="packages.cards.cities.price">From $1,200</span>
+                            <a class="btn secondary" href="#contact" data-i18n="packages.cards.cta">Book Now</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card shadow">
+                    <div class="card-body">
+                        <h3 data-i18n="packages.cards.islands.title">Island Escape</h3>
+                        <p data-i18n="packages.cards.islands.body">10 days in Bali and the Maldives with beachfront stays.</p>
+                        <div class="card-footer">
+                            <span class="price" data-i18n="packages.cards.islands.price">From $1,650</span>
+                            <a class="btn secondary" href="#contact" data-i18n="packages.cards.cta">Book Now</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card shadow">
+                    <div class="card-body">
+                        <h3 data-i18n="packages.cards.adventure.title">Adventure Trails</h3>
+                        <p data-i18n="packages.cards.adventure.body">12 days hiking, rafting, and balloon rides in Türkiye.</p>
+                        <div class="card-footer">
+                            <span class="price" data-i18n="packages.cards.adventure.price">From $1,450</span>
+                            <a class="btn secondary" href="#contact" data-i18n="packages.cards.cta">Book Now</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h2 data-i18n="contact.title">Contact Us</h2>
+                <p data-i18n="contact.subtitle">Tell us about your dream trip and we'll make it happen.</p>
+            </div>
+            <form id="contact-form" class="form">
+                <div class="field">
+                    <label for="name" data-i18n="contact.form.name">Full Name</label>
+                    <input id="name" name="name" type="text" required placeholder="Jane Doe" />
+                </div>
+                <div class="field">
+                    <label for="email" data-i18n="contact.form.email">Email</label>
+                    <input id="email" name="email" type="email" required placeholder="you@example.com" />
+                </div>
+                <div class="field">
+                    <label for="message" data-i18n="contact.form.message">Message</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="I want to plan a summer trip..."></textarea>
+                </div>
+                <button class="btn primary" type="submit" data-i18n="contact.form.submit">Send Message</button>
+                <p id="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p data-i18n="footer.copy">© 2024 First Flight Travels. All rights reserved.</p>
+        <div class="social">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </div>
+    </footer>
+    <script type="module" src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</body>
+</html>
