@@ -1,0 +1,92 @@
+{
+  "brand": "First Flight",
+  "nav": {
+    "home": "Home",
+    "destinations": "Destinations",
+    "packages": "Packages",
+    "contact": "Connect"
+  },
+  "hero": {
+    "title": "Travel that feels alive.",
+    "subtitle": "Immersive journeys, modern service, and instant ways to reach us.",
+    "cta": "View Packages",
+    "secondary": "Say Hello"
+  },
+  "destinations": {
+    "title": "Top Destinations",
+    "subtitle": "Hand-picked places loved by our travelers.",
+    "cards": {
+      "paris": {
+        "title": "Paris, France",
+        "body": "Romantic getaways, art, and culinary delights."
+      },
+      "bali": {
+        "title": "Bali, Indonesia",
+        "body": "Pristine beaches, tropical forests, and wellness retreats."
+      },
+      "cappadocia": {
+        "title": "Cappadocia, Türkiye",
+        "body": "Hot air balloons and surreal landscapes."
+      }
+    }
+  },
+  "stats": {
+    "trips": "Tailored trips delivered",
+    "satisfaction": "Satisfaction score",
+    "support": "Hour response team"
+  },
+  "packages": {
+    "title": "Featured Packages",
+    "subtitle": "Ready-to-go itineraries designed by experts.",
+    "tabs": {
+      "cities": "City Buzz",
+      "islands": "Island Glow",
+      "adventure": "Adventure"
+    },
+    "cards": {
+      "cities": {
+        "title": "Classic Cities",
+        "body": "7 days across Paris, Rome, and Barcelona with guided tours.",
+        "price": "From $1,200"
+      },
+      "islands": {
+        "title": "Island Escape",
+        "body": "10 days in Bali and the Maldives with beachfront stays.",
+        "price": "From $1,650"
+      },
+      "adventure": {
+        "title": "Adventure Trails",
+        "body": "12 days hiking, rafting, and balloon rides in Türkiye.",
+        "price": "From $1,450"
+      },
+      "cta": "Book Now"
+    }
+  },
+  "contact": {
+    "title": "Connect Instantly",
+    "subtitle": "Choose your favorite channel and reach us in one tap.",
+    "cta": "Start now",
+    "whatsapp": {
+      "title": "WhatsApp Business",
+      "body": "Open a chat with a pre-filled message."
+    },
+    "messenger": {
+      "title": "Messenger",
+      "body": "Message us directly on Facebook."
+    },
+    "instagram": {
+      "title": "Instagram",
+      "body": "See stories and DM us in seconds."
+    },
+    "phone": {
+      "title": "Call Us",
+      "body": "Tap to dial our concierge desk."
+    }
+  },
+  "cta": {
+    "quick": "Quick Connect"
+  },
+  "footer": {
+    "copy": "© 2024 First Flight Travels. All rights reserved."
+  }
+}
